@@ -34,3 +34,15 @@
     Ingredients
   </div>
 </div>
+<div class="row" *ngIf="recipe">
+  <p> Recipe Details </p>
+
+  <ul>
+
+    <li> <img [src]="recipe.imagePath" class="me-2" style="height: 4vh"/> {{recipe.name}}</li>
+
+    <li>{{recipe.description}}</li>
+
+  </ul>
+
+</div>
